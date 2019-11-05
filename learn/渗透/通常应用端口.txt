@@ -1,0 +1,11 @@
+http 80/8080/3128/8081/9080
+ftp   21
+telnet 23
+tftp 69/udp
+ssh、SCP（文件传输）  默认端口22/tcp
+SMTP(E-mail) 默认端口号25/tcp
+POP3(E-mail)默认端口 110/tcp
+WIN远程登录端口  3389
+oracle数据库  1521
+MYSQL 默认端口 1433
+QQ：默认端口1080

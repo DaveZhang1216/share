@@ -1,0 +1,4 @@
+ø… ”ªØ£∫
+	tensorboard --logdir=F:\models\tensorflow\projector\projector
+
+

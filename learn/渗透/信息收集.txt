@@ -1,0 +1,34 @@
+域名：
+通过域名获取ip 和子域名 
+子域名 原理： 网站爬取页面中url
+whois 查看域名注册人信息
+
+关于cms(PHP写的) 收集信息 
+robots.txt 防止
+后台目录
+安装包
+上传目录
+mysql 管理接口 phpMyAdmin
+安装页面
+phpinfo
+编辑器
+iis短文件
+
+端口扫描：
+	查看有哪些工具
+
+C段：
+	扫描相同网段的其他服务器
+
+后台查找：
+	admin, admin/login.asp, manage, login.asp等
+	robot.txt
+	sqlmap--sql-shell load_file('d:/wwroot/index.php')
+
+CDN绕过：
+	判断CDN
+	查超二级域名
+	让服务器主动发包 如邮件忘记密码、注册 
+	敏感文件泄露
+	查询历史解析IP
+	访问绕过： 修改host文件

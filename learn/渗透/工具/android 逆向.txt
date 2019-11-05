@@ -1,0 +1,44 @@
+夜神模拟器   adb connect 127.0.0.1:62001
+
+逍遥模拟器 adb connect 127.0.0.1:21503
+
+使用D:\Android\Sdk\tools\bin\uiautomatorviewer.bat
+
+获取控件ID
+钱包处 id/d8k
+零钱处 id/db9
+我的零钱处 id/ff4
+
+2.使用F:\face\tools\jadx-gui-1.0.0-3-with-jre-windows
+查看resources.arsc
+<public type="id" name="d8k" id="2131825970" />
+<public type="id" name="db9" id="2131826106" />
+<public type="id" name="ff4" id="2131828987" />
+
+
+3.使用D:\Android\Sdk\platform-tools\adb.exe
+adb shell dumpsys activity top
+查看android activity 栈
+钱包处 id/d8k  ACTIVITY com.tencent.mm/.plugin.mall.ui.MallIndexUI 53a7d7a pid=8724
+零钱处 id/db9  ACTIVITY com.tencent.mm/.plugin.mall.ui.MallWalletUI 5045a06 pid=8724
+我的零钱处 id/ff4 ACTIVITY com.tencent.mm/.plugin.wallet.balance.ui.WalletBalanceManagerUI 1be4d88c pid=8724
+4.到com.tencent.mm.R
+//jadx 有做处理
+public static final int d8k = 2131825970;   
+public static final int db9 = 2131826106;
+public static final int ff4 = 2131828987;
+5.com.tencent.mm/.plugin.mall.ui.MallIndexUI 
+查看对应的控件
+protected TextView pjt = null; d8k
+
+//MallWalletSectionCellView 在MallWalletUi中  public TextView pky;  db9  
+mallWalletSectionCellView.pky  db9
+protected TextView uyQ;  ff4
+
+5 编写代码
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+服务器类型
+	服务器平台、版本
+网站容器
+	IIS、 Apache、 nginx、tomcat
+脚本类型
+	asp、php、jsp、aspx等
+数据库类型
+	access、sqlServer、mysql、oracle、postgresql等
+CMS类型
+
+WAF:web应用防火墙
+
+谷歌hacker:
+1.intext:
+	查找网页中含有xx关键字的网站 例：Intext: 管理员登录
+2. Intitle：
+	查找某个标题 
+3. Filetype:
+	查找某个文件类型的文件 
+4. Inurl:
+	查找url中带有某字段的网站  如inurl: php?id=
+5. Site: 
+	在某域名中查找信息
+url采集器（工具）

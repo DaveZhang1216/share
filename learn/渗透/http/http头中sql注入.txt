@@ -1,0 +1,4 @@
+x-forwarded-for:1.1.1.1'
+client-ip:1.1.1.1'
+refere:' 
+如果进行了ip获取并用数据库进行了记录 

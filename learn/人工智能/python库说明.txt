@@ -1,0 +1,16 @@
+conda list 展示包
+anaconda search -t conda moviepy//查询包
+anaconda show nwani/tensorflow-gpu
+
+ukoethe/matplotlib
+
+numpy数学计算框架
+scipy物理计算框架
+pandas 数据分析框架
+matplotlib 绘图工具
+scikit-learn 机器学习框架
+tensorflow 谷歌开源出来的深度学习框架
+
+
+第i个元素：
+	

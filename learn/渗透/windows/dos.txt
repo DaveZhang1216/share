@@ -1,0 +1,38 @@
+color ？cmd上色
+systeminfor  获取系统信息
+net view 获取局域网主机名
+msg administrator "hello hacker"
+start www.baidu.com  打开命令
+copy a.txt c:\
+del c:\a.txt
+md xiao 目录创建
+rd xiao  目录删除
+copy con 123.txt
+内容
+
+Ctrl+z+Enter 保存
+
+type 123.txt 命令行打开
+
+net use K: \\192.168.3.100\c$    磁盘映射 为K 输入用户名密码
+net start 查看开了哪些服务
+net stop 
+net user 查看用户
+net user xiao 123 /add 创建用户
+net localgroup administrators xiao /add 将用户加入到组
+net localgroup
+可加入到Remote Deskstop Users组 登录服务器
+net user guest /active:yes 激活用户
+net user guset 123 加密码
+tasklist 查看进程
+taskkill /im cmd.exe
+
+netsh wlan set hostednetwork mode=allow ssid=cc key=12345678 //创建无线wifi
+netsh wlan start hosted 启动
+
+at /?
+at 22:51 shutdown -s -t 180  创建任务
+
+attrib 设置文档属性
+ren 重命名
+move 123.txt c:/ 

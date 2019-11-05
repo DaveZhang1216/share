@@ -1,0 +1,68 @@
+Mac帧
+framControl+Duration/ID+ADDR1+ADDR2+ADDR3+Seqctl+Addr4+framebody+fcs
+							0-2312
+
+framControl:
+	protocol位: 改帧所使用的mac版本
+	type与subtype:指定所使用帧类型
+	toDs 与fromDs: 指示帧原目是否为传输系统
+	morefragments bit: 如果上层封包经过MAC分段处理，最后一个分段除外其他片段将此位置1
+	retrybit: 重传帧
+	powermanagement: 此位指定传送端
+	moredata:
+	protectedframe：帧是否受链路层安全协议保护， 1：保护
+	orderbit: 是否严格依序传送  1：严格
+
+duration/ID位：数值代表目前所进行传输预计
+	      PS-poll帧：（省电轮询）
+address:
+	addr1:接收端
+	 addr2:传送端
+	  addr3: 被接收端拿过来的过滤地址
+		用来判定该帧是否属于其所连接网络
+	传送端地址： 将帧传送至无线介质的无线界面。传送端地址通常用于无线桥接
+seq-ctl:
+	顺序控制位：
+	4bit:片段编号  帧片段差异： 第一个片段编号0 以后一次加1
+	12bit: sequence number  
+	
+数据帧：
+	addr1: reciver
+	addr2: sender
+	addr3:filtering
+	addr4: optional
+
+
+1.IBSS数据帧：
+	addr1:目的
+	addr2:源
+	addr3: ap mac
+
+2.发送自基站的帧
+	区分源与发送端是必要的： 上层协议发送给源  应答帧发送给发送端
+3.WDS中的帧（桥接）：
+	addr1:接收端RA
+	addr2:发送端TA
+	addr3:目的DA
+	addr4: 源地址SA
+RTS/CTS: 实现载波监听：防止冲突
+ACK： 每个数据发送后一定要回一个ACK
+管理帧：服务于扫描、认证、连接过程
+
+ProbeRequst:
+	包含SSID 和 移动工作站所支持的速率。
+	addr1: ADDR1 目的
+	addr2: Addr2 源地址
+	addr3: BSSID
+	#  ADDR4: SSID
+ProbeResponse:
+	addr1: 目的地址
+	addr2：源地址
+	addr3: BSSID
+	
+scanning:
+ 	Passive Scanning：STA 通过侦听AP定期发送的Beacon帧来发现网络
+	Active Scanning:  STA 在每个信道上发送ProbeRequest,从AP回应的
+			Probe response 中获取SSID信息
+	
+详细： https://blog.csdn.net/u012503786/article/details/78783874	

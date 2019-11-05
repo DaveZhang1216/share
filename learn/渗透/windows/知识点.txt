@@ -1,0 +1,15 @@
+ProgramData 目录中是应用程序运行文件      可能会逃过杀毒软件
+Windows/System32/config/SAM
+	系统用户名密码信息  
+Windows/System32/drivers/etc/hosts
+	dns域名映射文件
+C:\Users 信息收集
+	存放系统帐号的目录   里面有QQ  桌面等 
+
+telnet服务  如果打开
+使用telnet可进行远程控制台
+
+查看木马： 
+msconfig   查看开机自动启动
+
+netstat -a可查看服务器

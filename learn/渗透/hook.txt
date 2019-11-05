@@ -1,0 +1,11 @@
+DLL 注入流程：
+	1.打开进程获取目标进程句柄
+	2.开辟空间存储dll路径的空间
+	3.将路径拷贝进去
+	4.获取kernel32模块句柄
+	5.获取LoadLibraryW函数起始地址
+	6.执行远程线程： 真正执行的是LoadLibrary
+	7.确认注入是否成功
+	如果dll 注入成功了
+
+https://www.e-learn.cn/content/qita/623229

