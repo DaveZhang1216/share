@@ -7,3 +7,5 @@
     Python query.py selfip   获取自己的公网IP
 
 Device.py 局域网中间人攻击 捕获包
+
+operator.py 可控制电脑鼠标和键盘
